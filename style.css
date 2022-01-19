@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 
+background-image: is local
+background-size ; cover basically covers all whole background
+background-position : it will align the image to centre.
+display flex : left over space distribute evenly between all the elements.
+flex direction : columns is used to align the countdown and words in vertical order
+align-items is used to align everything at centre.
+justify-content is used to make the right and left of the word at centre.
+*/
+body {
+    background-image: url("https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+/* this class is made to display the whole context in particular box which is countdown digit and the minutes and days texts.
+
+display : flex is used to assign left over spaces evenly between all the elements.
+flex wrap is used to make the things align after squzzeing*/
+
+
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*This class is for the countdown digits
+font-weight is used to make it bolder
+font-size is used to make the font size 5 times the root element size that is HTML size
+line-height is used to make gap b/w lines (up and down)
+margin = 6rem is used to make the digits at a perticular distance which is 6 times the margin of root element*/
+
+.big-text {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 6rem;
+}
+
+/* We made this class because the words hour and the countdown numbers
+will not be aligned so we have to explicitly align each days-c, hour-c
+and so on to make it aling, so instead of that we made this class and 
+aligned the whole thing at once*/
+.countdown-el {
+    text-align: center;
+}
+
+
+.countdown-el span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dot {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 4rem;
+}
