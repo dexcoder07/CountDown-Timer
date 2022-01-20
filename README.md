@@ -1,2 +1,3 @@
 # CountDown-Timer
-This is a Java Script basic project of Count Down timer.
+Basic JavaScript Project for the countdown of new year.
+![alt text](http://url/to/img.png)
